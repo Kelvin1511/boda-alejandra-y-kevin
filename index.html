@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandra & Kevin - Nuestra Boda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: {
+                            gold: '#B76E79',
+                            soft: '#E8C5C8',
+                            light: '#F4E3E5',
+                        },
+                        cream: '#FAF6F0',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        cursive: ['Alex Brush', 'cursive'],
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(250, 246, 240, 0.85)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(232, 197, 200, 0.4);
+        }
+    </style>
+</head>
+
+<body class="bg-cream font-sans text-gray-700 antialiased overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-white/85 backdrop-blur-md border-b border-rose-light/50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="font-cursive text-3xl text-rose-gold hover:text-gold transition-colors">A & K</a>
+
+            <div class="hidden md:flex space-x-8 font-serif text-sm tracking-wider uppercase text-gray-600">
+                <a href="#hero" class="hover:text-rose-gold transition-colors">Inicio</a>
+                <a href="#historia" class="hover:text-rose-gold transition-colors">Nuestra Historia</a>
+                <a href="#fotos" class="hover:text-rose-gold transition-colors">Compartir Fotos</a>
+            </div>
+
+            <a href="#fotos"
+                class="px-4 py-2 bg-rose-gold text-white text-xs uppercase tracking-widest rounded-full shadow-md hover:bg-gold transition-all duration-300 transform hover:-translate-y-0.5">
+                <i class="fa-solid fa-camera mr-2"></i>Subir Fotos
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero"
+        class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 relative">
+        <div class="text-rose-gold/40 text-6xl mb-4">
+            <i class="fa-solid fa-feather-pointed"></i>
+        </div>
+
+        <p class="font-serif uppercase tracking-[0.3em] text-gray-600 text-sm md:text-base mb-3">¡Nos Casamos!</p>
+        <h1 class="font-serif text-5xl md:text-7xl font-semibold text-gray-800 mb-2">Alejandra & Kevin</h1>
+        <p class="font-cursive text-4xl md:text-6xl text-rose-gold my-2">Nuestra Boda</p>
+
+        <!-- Date Card -->
+        <div
+            class="mt-8 glass-card px-8 py-4 rounded-2xl shadow-xl flex items-center justify-center gap-4 border border-rose-soft">
+            <div class="text-center">
+                <i class="fa-regular fa-calendar-heart text-2xl text-rose-gold mb-1"></i>
+                <p class="font-serif text-lg font-semibold text-gray-800">30 de Octubre, 2026</p>
+            </div>
+        </div>
+
+        <a href="#historia"
+            class="absolute bottom-8 text-rose-gold text-2xl animate-bounce hover:text-gold transition-colors">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Love Story Section with Updated Text -->
+    <section id="historia" class="py-20 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-rose-gold font-cursive text-3xl">Un viaje de amor</span>
+            <h2 class="font-serif text-3xl md:text-4xl text-gray-800 font-bold mt-1 uppercase tracking-wider">Nuestra
+                Historia</h2>
+            <div class="w-16 h-0.5 bg-rose-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="space-y-16">
+            <!-- Event 1: Primer Encuentro -->
+            <div
+                class="glass-card p-6 md:p-8 rounded-3xl shadow-lg border border-rose-soft/60 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-5 order-2 md:order-1 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <span class="p-2 rounded-full bg-rose-light text-rose-gold text-xs">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </span>
+                        <span class="text-xs font-semibold tracking-widest text-rose-gold uppercase">Nuestro
+                            Comienzo</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-gray-800">Primer Encuentro & Concierto</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Nuestra historia comenzó en una escuela de inglés, donde el destino cruzó nuestros caminos. Tras
+                        descubrir la hermosa conexión que existía entre nosotros, decidimos dar el siguiente paso y
+                        compartir una de nuestras primeras grandes citas asistiendo juntos a un inolvidable concierto de
+                        Peso Pluma, sellando risas y momentos que marcarían el inicio de todo.
+                    </p>
+                </div>
+                <div
+                    class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl shadow-md border-2 border-white">
+                    <img src="images/cita.jpg" alt="Nuestro Primer Encuentro"
+                        class="w-full h-64 md:h-72 object-cover transform hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+            <!-- Event 2: Primer Viaje -->
+            <div
+                class="glass-card p-6 md:p-8 rounded-3xl shadow-lg border border-rose-soft/60 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-7 overflow-hidden rounded-2xl shadow-md border-2 border-white">
+                    <img src="images/viaje.jpg" alt="El Primer Viaje Juntos"
+                        class="w-full h-64 md:h-72 object-cover transform hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="md:col-span-5 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <span class="p-2 rounded-full bg-rose-light text-rose-gold text-xs">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </span>
+                        <span class="text-xs font-semibold tracking-widest text-rose-gold uppercase">Nuestra
+                            Aventura</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-gray-800">Año Nuevo en Las Vegas</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Emprendimos nuestra primera gran aventura viajando juntos a Las Vegas para festejar nuestro
+                        primer año nuevo de la mano. Fue una experiencia verdaderamente mágica y especial, al
+                        representar nuestro primer viaje como pareja y recibir el año nuevo rodeados de ilusión,
+                        complicidad y la certeza de un futuro maravilloso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Event 3: La Propuesta -->
+            <div
+                class="glass-card p-6 md:p-8 rounded-3xl shadow-lg border border-rose-soft/60 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-5 order-2 md:order-1 space-y-3">
+                    <div class="flex items-center gap-2">
+                        <span class="p-2 rounded-full bg-gold/20 text-gold text-xs">
+                            <i class="fa-solid fa-ring"></i>
+                        </span>
+                        <span class="text-xs font-semibold tracking-widest text-rose-gold uppercase">El Gran Sí</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-gray-800">La Propuesta de Matrimonio</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Fue en un entorno íntimo y maravilloso, rodeados por la pureza de la naturaleza. Confieso que
+                        los nervios embargaban mi corazón, pero la inmensa felicidad y la certeza de amarla me dieron el
+                        valor perfecto para hacerle la pregunta más importante de mi vida: ¿te quieres casar conmigo? Un
+                        instante eterno grabado para siempre en nuestras almas.
+                    </p>
+                </div>
+                <div
+                    class="md:col-span-7 order-1 md:order-2 overflow-hidden rounded-2xl shadow-md border-2 border-white">
+                    <img src="images/propuesta.jpg" alt="La Propuesta de Matrimonio"
+                        class="w-full h-64 md:h-72 object-cover transform hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Photos QR & Link Section -->
+    <section id="fotos" class="py-20 bg-rose-light/30 border-y border-rose-soft/40 relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+
+            <div class="inline-block p-3 rounded-full bg-white shadow-sm mb-4">
+                <i class="fa-solid fa-camera-retro text-3xl text-rose-gold"></i>
+            </div>
+
+            <h2 class="font-serif text-3xl md:text-4xl text-gray-800 font-bold mb-3 uppercase tracking-wider">¡Comparte
+                Tus Fotografías!</h2>
+            <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base leading-relaxed mb-8">
+                Queremos revivir cada momento especial a través de tus ojos. Escanea el código QR desde tu teléfono o
+                utiliza el botón inferior para agregar tus fotos y videos al álbum interactivo de Google Fotos.
+            </p>
+
+            <div
+                class="glass-card rounded-3xl p-8 max-w-md mx-auto shadow-xl border border-rose-soft flex flex-col items-center">
+
+                <!-- QR Code Direct Image -->
+                <div
+                    class="bg-white p-4 rounded-2xl shadow-inner border border-gray-100 mb-6 flex justify-center items-center">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://photos.app.goo.gl/Y6B92G6gjujkyVwH6"
+                        alt="Código QR de Google Fotos" class="w-48 h-48 rounded-lg shadow-sm">
+                </div>
+
+                <p class="text-xs text-gray-500 font-medium mb-6 uppercase tracking-wider">
+                    <i class="fa-solid fa-qrcode text-rose-gold mr-1"></i> Escanea con la cámara de tu celular
+                </p>
+
+                <!-- Direct Google Photos Button -->
+                <a id="gphotos-link" href="https://photos.app.goo.gl/Y6B92G6gjujkyVwH6" target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full py-3.5 px-6 bg-gradient-to-r from-rose-gold to-gold text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-google text-lg"></i>
+                    <span>Abrir Álbum en Google Fotos</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                </a>
+
+            </div>
+
+            <!-- Simple Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-center max-w-3xl mx-auto">
+                <div class="bg-white/80 p-4 rounded-xl shadow-sm border border-rose-light">
+                    <span
+                        class="w-8 h-8 rounded-full bg-rose-light text-rose-gold font-bold flex items-center justify-center mx-auto mb-2 text-sm">1</span>
+                    <h4 class="font-serif font-semibold text-gray-800 text-sm">Escanea o Haz Clic</h4>
+                    <p class="text-xs text-gray-500 mt-1">Usa la cámara de tu móvil o toca el botón para acceder al
+                        álbum.</p>
+                </div>
+                <div class="bg-white/80 p-4 rounded-xl shadow-sm border border-rose-light">
+                    <span
+                        class="w-8 h-8 rounded-full bg-rose-light text-rose-gold font-bold flex items-center justify-center mx-auto mb-2 text-sm">2</span>
+                    <h4 class="font-serif font-semibold text-gray-800 text-sm">Selecciona tus Fotos</h4>
+                    <p class="text-xs text-gray-500 mt-1">Añade los mejores momentos y videos grabados en la boda.</p>
+                </div>
+                <div class="bg-white/80 p-4 rounded-xl shadow-sm border border-rose-light">
+                    <span
+                        class="w-8 h-8 rounded-full bg-rose-light text-rose-gold font-bold flex items-center justify-center mx-auto mb-2 text-sm">3</span>
+                    <h4 class="font-serif font-semibold text-gray-800 text-sm">¡Listo!</h4>
+                    <p class="text-xs text-gray-500 mt-1">Tus fotos quedarán guardadas para que los novios las conserven
+                        de recuerdo.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white border-t border-rose-light/60 py-10 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="font-cursive text-4xl text-rose-gold mb-2">Alejandra & Kevin</h3>
+            <p class="font-serif text-xs uppercase tracking-widest text-gray-500">Gracias por formar parte de nuestra
+                historia</p>
+            <div class="w-12 h-px bg-rose-soft mx-auto my-4"></div>
+            <p class="text-xs text-gray-400">&copy; 2026 - Con amor para todos nuestros invitados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
